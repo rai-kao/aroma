@@ -44,7 +44,7 @@ Redis utilities use [Reddison](https://github.com/redisson/redisson) client feat
   ...
   ```
 
-  *Please note that if calling `service.mutualExclusion("r0")` and `service.mutualExclusion("r1")`,
+  *Please note that if calling `resource.mutualExclusion("r0")` and `resource.mutualExclusion("r1")`,
   they can execute concurrently without problem.*
 
 ### Redis Cache
