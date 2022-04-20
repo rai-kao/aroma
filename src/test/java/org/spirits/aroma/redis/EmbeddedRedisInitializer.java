@@ -13,7 +13,7 @@ public class EmbeddedRedisInitializer {
             redisServer = RedisServer.builder()
                     .port(RedisTestConfig.REDIS_PORT)
                     .bind(RedisTestConfig.REDIS_IP)
-                    .setting("maxmemory 128M")
+                    .setting("maxmemory 32M")
                     .build();
             redisServer.start();
         }

@@ -22,7 +22,7 @@ public class RedisLockTest extends EmbeddedRedisInitializer {
     public void defaultLockValueTest() {
         Map<Integer, Boolean> results = new ConcurrentHashMap<>();
 
-        IntStream.range(0, 10).parallel().forEach(i -> {
+        IntStream.range(0, 4).parallel().forEach(i -> {
             try {
                 results.put(i, redisTestService.defaultLockKey());
             } catch (Exception e) {
@@ -38,7 +38,7 @@ public class RedisLockTest extends EmbeddedRedisInitializer {
     public void customLockValueTest() {
         Map<Integer, Boolean> results = new ConcurrentHashMap<>();
 
-        IntStream.range(0, 10).parallel().forEach(i -> {
+        IntStream.range(0, 4).parallel().forEach(i -> {
             try {
                 results.put(i, redisTestService.customLockKey(0));
             } catch (Exception e) {
