@@ -1,5 +1,7 @@
 # Aroma :herb:
 
+[![CI](https://github.com/rai-kao/aroma/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/rai-kao/aroma/actions)
+
 Lightweight utilities focus on AOP annotations and wrapper methods.
 
 ## Redis utilities
